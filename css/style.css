@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    align-items: center;
+    padding: 2rem 0 0 0;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 5rem;
+}
+
+.hero-boxes {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.team-karma {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 2rem;
+}
+
+.hero-text {
+    margin: auto;
+    text-align: center;
+}
+
+h2:first-of-type {
+    font-weight: 300;
+    font-size: 2.6rem;
+    letter-spacing: .08rem;
+}
+
+h2:last-of-type {
+    font-size: 2.45rem;
+    letter-spacing: .1rem;
+}
+
+@media (max-width: 500px) {
+    .hero-boxes {
+        flex-direction: column;
+    }
+
+    h2:first-of-type {
+        letter-spacing: 0.04rem;
+    }
+
+    .supervisor,
+    .team,
+    .karma,
+    .calc {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-boxes {
+        flex-direction: column;
+    }
+
+    .supervisor,
+    .team,
+    .karma,
+    .calc {
+        width: 100%;
+    }
+}
+
+.hero-text p {
+    margin-top: 1.5rem;
+    line-height: 1.4;
+    
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0.38;
+    font-weight: 500;
+}
+
+.supervisor,
+.team,
+.karma,
+.calc {
+    background-color: #fff;
+    position: relative;
+    padding: 2.5rem;
+    width: 30rem;
+    height: 20rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(131, 166, 210, 35%);
+    transition: all 0.3s ease-in-out;
+}
+
+.supervisor {
+    border-top: 3.5px solid hsl(180, 62%, 55%);
+}
+
+.team {
+    border-top: 3.5px solid hsl(0, 78%, 62%);
+}
+
+.karma {
+    border-top: 3.5px solid hsl(34, 97%, 64%);
+}
+
+.calc {
+    border-top: 3.5px solid hsl(212, 86%, 64%);
+}
+
+.supervisor,
+.calc {
+    display: flex;
+    align-self: center;
+}
+
+.texts h3 {
+    font-size: 1.6rem;
+    opacity: .7;
+}
+
+.texts p {
+    margin-top: 1rem;
+}
+
+.texts img {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
+
